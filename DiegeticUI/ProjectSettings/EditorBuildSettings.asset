@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 03a3ba0b79ee6c647aba4ef813fa6970
+  - enabled: 1
+    path: Assets/Scenes/BloodEffectScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CompassScene.unity
+    guid: df3b71698f0b0f8438ae6eabd275f92d
+  - enabled: 1
+    path: Assets/Scenes/NotePadScene.unity
+    guid: 98c9d9a691e18e7408cfc18b3bbd55fc
   m_configObjects: {}
