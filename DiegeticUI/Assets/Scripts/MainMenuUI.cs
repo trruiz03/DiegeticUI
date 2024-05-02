@@ -10,6 +10,8 @@ public class MainMenuUI : MonoBehaviour
     public GameObject spatialButton, mapButton, compassButton, escapeMenu;
     public GameObject menuPanel;
 
+    public GameObject bookImages;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,17 @@ public class MainMenuUI : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            menuPanel.SetActive(!menuPanel.activeInHierarchy);
-            
+            menuPanel.SetActive(!menuPanel.activeInHierarchy);         
+        }
+
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            bookImages.SetActive(!bookImages.activeInHierarchy);
+        }
+
+        if(menuPanel.activeInHierarchy && bookImages.activeInHierarchy) 
+        { 
+            bookImages.SetActive(false);
         }
     }
 
